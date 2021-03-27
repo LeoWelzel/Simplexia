@@ -1,0 +1,36 @@
+.maintext {
+  width: 60%;
+  margin: auto;
+  /* TODO: change width to absolute on narrower displays */
+}
+
+.colorpick {
+  padding: 10px;
+  position: absolute;
+}
+
+#keyword-list {
+  width: 20%;
+  float: left;
+}
+
+#acronyms-list {
+  width: 20%;
+  float: right;
+}
+
+#container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#spacer {
+  height: 5em;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

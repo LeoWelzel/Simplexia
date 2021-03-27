@@ -1,0 +1,7 @@
+.metals/
+.vscode/
+*/node_modules/
+info/
+backend/tmp/
+temp
+text/

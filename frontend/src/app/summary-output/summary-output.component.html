@@ -1,0 +1,29 @@
+<div *ngIf="visible" class="outputDisplay">
+  <mat-card [style.background-color]="color">
+    <app-loading-spinner *ngIf="this.loading"></app-loading-spinner>
+    <div *ngIf="!this.loading" class="primaryFont">
+      <mat-label id="emphasise">
+        {{broaderDetails}}
+      </mat-label>
+      <div id="display-menu">
+        <mat-select [(value)]="currentOption" class="primarySize primaryFont">
+          <mat-option *ngFor="let option of summaryOptions" [value]="option">{{ option }}</mat-option>
+        </mat-select>
+      </div>
+      <div>
+        <mat-label *ngIf="!!warnings.length" id="warning" class="primarySize">
+          {{warnings}}
+        </mat-label>
+      </div>
+      <hr>
+      <div>
+        <mat-label *ngIf="currentOption == 'Condense'" style="white-space: pre-line" class="primarySize primaryFont"
+          [innerHTML]="condenseHTML">
+        </mat-label>
+        <mat-label *ngIf="currentOption == 'Highlight'" style="white-space: pre-line" class="primarySize primaryFont"
+          [innerHTML]="highlightHTML">
+        </mat-label>
+      </div>
+    </div>
+  </mat-card>
+</div>

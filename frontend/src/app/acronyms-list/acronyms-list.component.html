@@ -1,0 +1,14 @@
+<div *ngIf="visible && !loading && acronyms.length > 0">
+  <mat-accordion>
+    <mat-expansion-panel [style.background-color]="color">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Acronyms
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-list>
+        <mat-list-item *ngFor="let acronym of acronyms">{{ expandPair(acronym) }}</mat-list-item>
+      </mat-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

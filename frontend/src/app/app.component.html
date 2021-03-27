@@ -1,0 +1,32 @@
+<div id="container">
+  <app-header></app-header>
+
+  <mat-form-field class="colorpick">
+    <input matInput [ngxMatColorPicker]="picker" [formControl]="colorCtr">
+    <ngx-mat-color-toggle matSuffix [for]="picker"></ngx-mat-color-toggle>
+    <ngx-mat-color-picker #picker [touchUi]=false [color]="color"></ngx-mat-color-picker>
+  </mat-form-field>
+
+  <div class="maintext">
+    <app-summary-input [color]="colorCtr.value?.rgba"></app-summary-input>
+  </div>
+
+  <app-keyword-list id="keyword-list" [color]="colorCtr.value?.rgba"></app-keyword-list>
+  <app-acronyms-list id="acronyms-list" [color]="colorCtr.value?.rgba"></app-acronyms-list>
+
+  <div class="maintext">
+    <app-summary-output [color]="colorCtr.value?.rgba"></app-summary-output>
+  </div>
+
+  <div class="spacer"></div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+</div>

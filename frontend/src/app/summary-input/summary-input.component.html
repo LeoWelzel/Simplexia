@@ -1,0 +1,22 @@
+<mat-card [style.background-color]="color">
+  <!-- <app-loading-spinner *ngIf="isLoading"></app-loading-spinner> -->
+  <!-- TODO: add loading spinners -->
+  <form [formGroup]="form" (submit)="onSubmitPost()" #postForm="ngForm">
+    <div class="primaryFont">
+      <mat-label id="description">
+        {{ formDescription }}
+      </mat-label>
+      <mat-form-field class="primaryFont autoWidth">
+        <textarea matInput formControlName="content" class="autoWidth" id="textInput"></textarea>
+        <mat-error *ngIf="verify('content')">Enter content</mat-error>
+      </mat-form-field>
+    </div>
+    <div id="submitBtn">
+      <button mat-raised-button
+              color="primary"
+              type="submit"
+              class="primaryFont"
+              fxLayoutAlign="space-between center">SUBMIT</button>
+    </div>
+  </form>
+</mat-card>

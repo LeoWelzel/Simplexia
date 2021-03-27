@@ -1,0 +1,14 @@
+<div *ngIf="visible && !loading && keywords.length > 1">
+  <mat-accordion>
+    <mat-expansion-panel [style.background-color]="color">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Keywords
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-list>
+        <mat-list-item *ngFor="let keyword of keywords">{{ keyword }}</mat-list-item>
+      </mat-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
