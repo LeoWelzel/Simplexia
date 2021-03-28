@@ -1,7 +1,6 @@
 .maintext {
   width: 60%;
   margin: auto;
-  /* TODO: change width to absolute on narrower displays */
 }
 
 .colorpick {

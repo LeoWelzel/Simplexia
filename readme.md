@@ -1,6 +1,5 @@
 # Simplexia - AstraZeneca Neurodiversity Hackathon 2021
 
-## Overview
 <img src="examples/logo.png" width="200" />
 
 Individuals with dyslexia can find it challenging to focus when reading large documents.
@@ -47,10 +46,15 @@ Here, this colour has been set to a light green tone.
 
 
 ## Setup
+
 Make sure to run `npm install` from both `frontend/` and `backend/` to install all required packages.
+
 ### Backend
+
 Run `node server.mjs` from `backend/` to start the backend server.
-## Frontend
+
+### Frontend
+
 Run `ng serve` from `frontend/` to start a frontend server.
 
 ## Credits

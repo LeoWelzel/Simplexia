@@ -18,7 +18,6 @@ server.use((request, response, next) => {
   next();
 });
 
-// TODO: make async
 server.post('/', (req, res, next) => {
   let textForSummary = req.body.text;
 
