@@ -8,8 +8,6 @@ Simplexia's purpose is to address this issue by condensing lengthy texts into sh
 
 By harnessing DeepAI's [text summary](https://deepai.org/machine-learning-model/summarization) and [text tagging](https://deepai.org/machine-learning-model/text-tagging) APIs, Simplexia simplifies the process of absorbing long documents by producing summaries, expanding acronyms and presenting lists of keywords.
 
-<br>
-
 <img src="examples/condensed text.png" width=300>
 
 **Condensed text** is presented as a list of the input's key sentences.
@@ -58,4 +56,4 @@ Run `node server.mjs` from `backend/` to start the backend server.
 Run `ng serve` from `frontend/` to start a frontend server.
 
 ## Credits
-Written by Leo, Elanor and Kathlyn.
+Written by [Leo](https://github.com/LeoWelzel), [Elanor](https://github.com/elanorstark) and [Kathlyn](https://github.com/SimplyBiotic).
