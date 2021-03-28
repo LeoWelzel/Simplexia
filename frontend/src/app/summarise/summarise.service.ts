@@ -4,8 +4,6 @@ import { HttpClient } from '@angular/common/http';
 
 import { DEFAULT_SUMMARY, Summary } from './summary.model';
 
-// TODO: move this somewhere more sensible.
-
 const serverAddress = 'http://localhost:3000/';
 
 @Injectable({

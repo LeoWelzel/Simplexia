@@ -20,7 +20,6 @@ export class SummaryInputComponent {
 
     this.outputVisibilityService.setVisibility(false);
 
-    // TODO: move to ngOnInit
     this.form = new FormGroup({
       'content': new FormControl(null, {
         validators: [Validators.required]

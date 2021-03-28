@@ -5,8 +5,6 @@ export interface Summary {
   lastSent: string;
 }
 
-// TODO: remove the 'summarised' field
-
 export const DEFAULT_SUMMARY = {
   summarise: { indices: [], valid: true },
   keyword: { words: [], valid: true },

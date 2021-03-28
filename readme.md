@@ -1,14 +1,13 @@
-# Overview
-This is the repository for Team 022's progress on the AstraZeneca Neurodiversity Hackathon 2021.
+# Simplexia - AstraZeneca Neurodiversity Hackathon 2021
 
-We chose Challenge #4 - Robert Radcliffe.
-
-## Our Solution
+## Overview
 <img src="examples/logo.png" width="200" />
 
-Our product is intended to increase accessibility for long texts/articles by summarising and highlighting key information from user-inputted texts.
+Individuals with dyslexia can find it challenging to focus when reading large documents.
 
-We use DeepAI's [text summary](https://deepai.org/machine-learning-model/summarization) and [text tagging](https://deepai.org/machine-learning-model/text-tagging) APIs.
+Simplexia's purpose is to address this issue by condensing lengthy texts into shortened summaries that make for easier reading.
+
+By harnessing DeepAI's [text summary](https://deepai.org/machine-learning-model/summarization) and [text tagging](https://deepai.org/machine-learning-model/text-tagging) APIs, Simplexia simplifies the process of absorbing long documents by producing summaries, expanding acronyms and presenting lists of keywords.
 
 <br>
 
@@ -47,22 +46,12 @@ In order to enhance readability for dyslexic users, the colour of the background
 Here, this colour has been set to a light green tone.
 
 
-## Future enhancement
-The following features could be added to improve the product further.
-- Text to speech functionality
-- Saving previously condensed texts on the site
-- Providing relevant google image search results for the identified keywords
-- The ability to extract texts from various file types and websites
+## Setup
+Make sure to run `npm install` from both `frontend/` and `backend/` to install all required packages.
+### Backend
+Run `node server.mjs` from `backend/` to start the backend server.
+## Frontend
+Run `ng serve` from `frontend/` to start a frontend server.
 
-## Usage
-A local testing server can be opened by following these steps.
-- On the first time, run `npm install` from both `frontend/` and `backend/` to install all required packages.
-- Running `node server.mjs` from `backend/` to start a basic backend server.
-- Running `ng server` from `frontend/` to start a basic Angular server.
-- Navigating to `http://localhost:4200` to see the product in action.
-
-<br>
-
-# Credits
-<!-- ![image](examples/credits.png) -->
-<img src="examples/credits.png" width="200" />
+## Credits
+Written by Leo, Elanor and Kathlyn.
