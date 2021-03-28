@@ -42,7 +42,6 @@ In order to enhance readability for dyslexic users, the colour of the background
 
 Here, this colour has been set to a light green tone.
 
-
 ## Setup
 
 Make sure to run `npm install` from both `frontend/` and `backend/` to install all required packages.
